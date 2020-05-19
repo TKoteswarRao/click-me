@@ -2,7 +2,6 @@
   "name": "click-me",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/TKoteswarRao/click-me.git",
   "dependencies": {
     "@material-ui/core": "^4.9.14",
     "@testing-library/jest-dom": "^4.2.4",
