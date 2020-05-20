@@ -1,9 +1,16 @@
 body{
-    background-color: rgb(250, 250, 250);
+ 
 }
-
+.image {
+    width: 70px;
+    margin-top: 50px;
+  }
+  .responsive{
+    width: 30%;
+    height: auto;
+  }
 .container{
-    display: flex;
+    display: flexbox;
     align-items: center;
     justify-content: center;
     flex-direction: column;

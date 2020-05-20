@@ -1,12 +1,12 @@
 import React from 'react';
-import './App.css';
+//import './App.css';
 
 //import Cards from './component/Cards';
 //import Chart from './component/Chart';
 //import CountryPicker from './component/CountryPicker';
 
 import {Cards,Chart,CountryPicker} from './component';
-import styles from './App'
+import styles from './App.module.css'
 import {fetchData} from './api';
 import covid from './images/covid.png'
 
@@ -28,11 +28,10 @@ handleCountryChange =async (country)=>{
     const {data,country}=this.state;
   return(
     <div className={styles.container}>
-      <img src={covid}/>
+    <img className={styles.responsive} src={covid} alt="COVID-19" />
       <Cards data ={this.state.data }/>
       <CountryPicker handleCountryChange={this.handleCountryChange}/>
       <Chart data={data} country={country}/>
-      
     </div>
   )
 }
