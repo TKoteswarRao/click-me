@@ -23,16 +23,16 @@ state ={
 handleCountryChange =async (country)=>{
   const fetchedData=await fetchData(country)
   this.setState({data:fetchedData,country:country});
- // console.log(country)
-  //console.log(fetchedData)
 }
   render(){
+    const {data,country}=this.state;
   return(
     <div className={styles.container}>
       <img src={covid}/>
       <Cards data ={this.state.data }/>
-      <Chart/>
       <CountryPicker handleCountryChange={this.handleCountryChange}/>
+      <Chart data={data} country={country}/>
+      
     </div>
   )
 }
